@@ -9,20 +9,20 @@
 // IMC maior ou igual a 40.0: Obesidade grau 3
 
 
-P = parseFloat(prompt("Qual seu peso?"))
-H = parseFloat(prompt("Qual sua altura?"))
-IMC = P / (H * H)
+let P = parseFloat(prompt("Qual seu peso? (Em KG)"))
+let H = parseFloat(prompt("Qual sua altura? (Em metros)"))
+let IMC = P / (H * H)
 
 if (IMC < 18.5) {
-    console.log("Seu IMC é: " + IMC + ". Você está abaixo do peso")
+    console.log("Seu IMC é: " + IMC.toFixed(2) + ". Você está abaixo do peso")
 } else if (IMC >= 18.5 && IMC < 25) {
-    console.log("Seu IMC é: " + IMC + ". Você está com peso normal")
+    console.log("Seu IMC é: " + IMC.toFixed(2) + ". Você está com peso normal")
 } else if (IMC >= 25 && IMC < 30) {
-    console.log("Seu IMC é: " + IMC + ". Você está com sobrepeso")
+    console.log("Seu IMC é: " + IMC.toFixed(2) + ". Você está com sobrepeso")
 } else if (IMC >= 30 && IMC < 35) {
-    console.log("Seu IMC é: " + IMC + ". Você está com obesidade de grau 1")
+    console.log("Seu IMC é: " + IMC.toFixed(2) + ". Você está com obesidade de grau 1")
 } else if (IMC >= 35 && IMC < 40) {
-    console.log("Seu IMC é: " + IMC + ". Você está com obesidade de grau 2")
+    console.log("Seu IMC é: " + IMC.toFixed(2) + ". Você está com obesidade de grau 2")
 } else if (IMC > 40) {
-    console.log("Seu IMC é: " + IMC + ". Você está com obesidade de grau 3")
+    console.log("Seu IMC é: " + IMC.toFixed(2) + ". Você está com obesidade de grau 3")
 }

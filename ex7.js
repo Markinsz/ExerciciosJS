@@ -6,13 +6,18 @@
 // Exiba o valor final da compra com o desconto aplicado.
 
 
-VC = parseFloat(prompt("Qual o valor da sua compra?"))
+let VC = parseFloat(prompt("Qual o valor da sua compra?"))
+
+let VD;
+let VT;
 
 if (VC <= 100) {
+    console.log("Não há Desconto")
     console.log("O valor total é " + VC)
 } else if (VC > 100 && VC <= 200) {
     VD = VC * 0.1
     VT = VC - VD
+    console.log("O valor do Desconto é ")
     console.log("O valor total é " + VT)
 } else if (VC > 200) {
     VD = VC * 0.2
