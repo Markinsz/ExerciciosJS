@@ -3,7 +3,7 @@
 let n = 0
 let i = 1
 
-while (n<=5050){
+while (i<=101){
     console.log(n);
     n = n + i
     i++
