@@ -4,5 +4,5 @@ let Num = prompt("Escolha um número de 1 a 10")
 
 for (let n = 1; n <= 10; n++){
     let result = Num * n
-    console.log(result);
+    console.log(Num + " X " +  n + " = " + result);
 }
